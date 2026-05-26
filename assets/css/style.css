@@ -469,17 +469,44 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: var(--onyx);
+
+  transition: 0.25s ease;
+}
+.social-item .social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s ease;
 }
 
-/* paksa icon ikut warna */
 .social-item .social-link ion-icon {
-  color: inherit;
+  font-size: 20px;
+  color: var(--light-gray-70);
+  transition: 0.3s ease;
 }
 
 .social-item .social-link:hover {
-  color: var(--light-gray);
+  transform: translateY(-3px);
+  background: var(--jet);
+}
+
+.social-item .social-link:hover ion-icon {
+  color: var(--orange-yellow-crayola);
 }
 
 /*-----------------------------------*\
@@ -597,7 +624,7 @@ main {
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-3);
+  font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
