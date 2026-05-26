@@ -459,7 +459,6 @@ main {
 .contact-info address {
   font-style: normal;
 }
-
 .social-list {
   display: flex;
   justify-content: flex-start;
@@ -472,6 +471,11 @@ main {
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
+}
+
+/* paksa icon ikut warna */
+.social-item .social-link ion-icon {
+  color: inherit;
 }
 
 .social-item .social-link:hover {
